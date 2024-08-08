@@ -8,6 +8,7 @@
 
 # testing
 /coverage
+yarn.lock
 
 # next.js
 /.next/
@@ -15,9 +16,11 @@
 
 # production
 /build
+bun.lockb
 
 # misc
 .DS_Store
+.env
 *.pem
 
 # debug
