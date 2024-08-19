@@ -1,4 +1,5 @@
 import { defaultWagmiConfig } from "@web3modal/wagmi/react/config";
+import { zoraSepolia } from "viem/chains";
 import { cookieStorage, createStorage } from "wagmi";
 import { mainnet, sepolia } from "wagmi/chains";
 
@@ -14,7 +15,7 @@ const metadata = {
 };
 
 // Create wagmiConfig
-const chains = [mainnet, sepolia] as const;
+const chains = [mainnet, sepolia, zoraSepolia] as const;
 export const config = defaultWagmiConfig({
   chains,
   projectId,

@@ -33,7 +33,7 @@ const StoryWriter = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      //   story, pages and path will be the first 3 arguments of our GPT script
+      //   story, pages and path will be the first 3 arguments for our GPT script
       body: JSON.stringify({ story, pages, path: storiesPath }),
     });
 
@@ -101,7 +101,7 @@ const StoryWriter = () => {
           value={story}
           onChange={(e) => setStory(e.target.value)}
           className="flex-1 text-black"
-          placeholder="Write a story about a human and a robot who become friends///"
+          placeholder="Write a story about how a robot made by a child became his best companion"
         />
         <Select onValueChange={(value) => setPages(parseInt(value))}>
           <SelectTrigger>
