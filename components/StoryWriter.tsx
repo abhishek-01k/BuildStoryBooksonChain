@@ -13,7 +13,7 @@ import { useState } from "react";
 import { Frame } from "@gptscript-ai/gptscript";
 import renderEventMessage from "@/lib/renderEventMessage";
 
-// @abhishek this is where I want the GPT to go ahead and write the stories. (we dont have the Database, we are writing to the server itself)
+// this is where I want the GPT to go ahead and write the stories. (we dont have the Database, we are writing to the server itself)
 const storiesPath = "public/stories";
 const StoryWriter = () => {
   const [story, setStory] = useState<string>("");
